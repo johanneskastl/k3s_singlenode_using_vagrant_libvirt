@@ -1,0 +1,8 @@
+---
+- name: 'Install, configure and start k3s'
+  hosts: 'k3s'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'install_k3s'
