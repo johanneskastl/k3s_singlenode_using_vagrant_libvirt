@@ -1,6 +1,6 @@
 ---
 - name: 'Install, configure and start k3s'
-  hosts: 'k3s'
+  hosts: 'k3s1'
   gather_facts: true
   become: true
 
