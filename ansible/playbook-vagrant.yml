@@ -6,3 +6,5 @@
 
   roles:
     - role: 'install_k3s'
+      tls_san:
+        - "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
